@@ -82,6 +82,7 @@ networkHost: "0.0.0.0"
 
 volumeClaimTemplate:
   accessModes: [ "ReadWriteOnce" ]
+  storageClassName: available-delete-wait
   resources:
     requests:
       storage: 30Gi
